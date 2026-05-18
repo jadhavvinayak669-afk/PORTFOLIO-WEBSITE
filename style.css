@@ -373,17 +373,19 @@
   @media(max-width:900px){
     /* Navigation */
     nav { 
-      padding:1rem 1.5rem; 
-      flex-wrap:wrap;
-      gap:1rem;
+      padding:1rem 1rem; 
+      flex-direction: column;
+      gap:.8rem;
+      align-items: center;
     }
     .nav-logo { font-size:1.1rem; }
     .nav-links { 
-      gap:1.2rem; 
-      flex-wrap:wrap;
+      gap:.6rem; 
+      flex-wrap: nowrap;
       justify-content:center;
+      width: 100%;
     }
-    .nav-links a { font-size:.7rem; }
+    .nav-links a { font-size:.58rem; letter-spacing:.08em; padding:.4rem .2rem; }
     
     /* Sections */
     section { padding:4rem 1.5rem; }
@@ -453,9 +455,10 @@
   
   /* Extra small screens */
   @media(max-width:480px){
-    nav { padding:.8rem 1rem; }
-    .nav-links { gap:.8rem; }
-    .nav-links a { font-size:.65rem; }
+    nav { padding:.8rem .5rem; }
+    .nav-logo { font-size:1rem; }
+    .nav-links { gap:.4rem; flex-wrap: nowrap; }
+    .nav-links a { font-size:.52rem; letter-spacing:.06em; padding:.4rem .15rem; }
     
     section { padding:3rem 1rem; }
     
